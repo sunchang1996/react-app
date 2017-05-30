@@ -6,7 +6,7 @@ module.exports = {
             title: '汉堡大大',
             subTitle: '叫我汉堡大大，还你多彩口味',
             price: '28',
-            distance: '120m',
+            distance: '120',
             number: '389',
             id: Math.random().toString().slice(2)
         },
@@ -15,7 +15,7 @@ module.exports = {
             title: '北京开源饭店',
             subTitle: '[望京]自助晚餐',
             price: '98',
-            distance: '140m',
+            distance: '140',
             number: '689',
             id: Math.random().toString().slice(2)
         },
