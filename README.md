@@ -43,3 +43,9 @@
     npm install swipe-js-iso react-swipe 
 
 ```
+## Fetch  方法()
+```
+    替代XMLHttpRequest  会返回一个Promise对象 让你能够对请求的返回结果进行检索。 
+    简单来说 就是实现了ajax，promist综合的一个方法 结果会返回一个promise对象 后面可以直接.then()
+      Accept:'application/json'  响应头 返回json数据
+```
