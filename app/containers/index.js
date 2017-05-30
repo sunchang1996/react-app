@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import RouterMap from  '../routes/index'
+import RouterMap from  '../routes/index';
 export default class App extends Component{
     constructor(props){
         super();
