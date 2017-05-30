@@ -1,12 +1,14 @@
 import React,{Component} from 'react';
 import HomeHeader from '../../components/HomeHeader/index';
-import Slider from '../Slider/slider.js'
+import Slider from '../Slider/slider.js';
+import Ad from './subpage/Ad';
 export default class Home extends Component{
     render(){
         return (
             <div>
                 <HomeHeader cityName="北京"/>
                 <Slider/>
+                <Ad/>
             </div>
         )
     }

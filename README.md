@@ -38,7 +38,7 @@
         - index.js 
 - index.js 用来控制显示哪一个页面 
 
-## 安装插件
+## 安装插件 轮播图插件 
 ```
     npm install swipe-js-iso react-swipe 
 
