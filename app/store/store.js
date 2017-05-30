@@ -4,4 +4,4 @@ export function configureStore(initState) {
     return createStore(reducers,initState,
     window.devToolsExtension?window.devToolsExtension():undefined);
 }
-//redux-tools 可以看当前redux的所有状态
+//redux-tools 可以看当前redux的所有状态``
