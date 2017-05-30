@@ -5,4 +5,5 @@ export function getAd() {
 }
 // 获取list数据
 export function getList(city,page) {
-    return get('/api/list/'+city+'/'+page)
+    return get('/api/list/' + city + '/' + page)
+}

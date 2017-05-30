@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import HomeHeader from '../../components/HomeHeader/index';
-import Slider from '../Slider/slider.js';
+import Slider from '../../components/Slider/slider.js';
 import Ad from './subpage/Ad';
 import {connect} from 'react-redux';
 import List from './subpage/List';
