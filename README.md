@@ -38,6 +38,11 @@
         - index.js 
 - index.js 用来控制显示哪一个页面 
 
+- store onlyOne 
+- action 用户发布动作
+- reducer 定义规则的
+- action-types action的名字
+
 ## 安装插件 轮播图插件 
 ```
     npm install swipe-js-iso react-swipe 
