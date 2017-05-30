@@ -1,11 +1,11 @@
 {
   "name": "react-app",
   "version": "1.0.0",
-  "description": "- react react-router4 redux  react-redux ## 安装初始化  package.json ```     npm init -y ```",
+  "description": "sc",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 3100 --open --progress --colors",
-    "build": "webpack -P"
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "",

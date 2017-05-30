@@ -19,7 +19,7 @@
 ```
 ## fetch
 ```
-    npm install es6-promise whatwg-fetch(如果fetch不兼容 可以自动转到低版本) -D
+    npm install es6-promise whatwg-fetch(如果fetch不兼容 可以自动转到低版本(降到ajax)) -D
 ```
 ## express
 ```
@@ -30,3 +30,10 @@
     "start","webpack-dev-server --port 5000 --open --progress(进度条) --colors"
     "build","webpack -p"
 ```
+## 目录结构
+- components 组件 木偶组件
+- containers 页面组件 ,或者subpage 目录下
+    - home
+        - subpage 智能组件
+        - index.js 
+- index.js 用来控制显示哪一个页面 
