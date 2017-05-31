@@ -3,17 +3,21 @@ import React,{Component} from 'react';
 // Route 小路由
 import {
     HashRouter as Router // 大路由 提供一个路由容器
-    ,Route // 单条路由
+    ,Route, // 单条路由
+    Switch // 切换 只匹配一次
 } from 'react-router-dom';
-import Home from '../containers/Home'
+import Home from '../containers/Home';
+import Detail from "../containers/Detail/Detail";
 export default class RouterMap extends Component{
     render(){
         return (
             <div>
                 <Router>
-                    <div>
-                        <Route path='/' component={Home}/>
-                    </div>
+                    <Switch>
+                        {/*exact:绝对匹配 只有当路径是/的时候才匹配路由*/}
+                        <Route exact path='/' component={Home}/>
+                        <Route path="/detail/:id" component={Detail}/>
+                    </Switch>
                 </Router>
             </div>
         )
