@@ -13,6 +13,19 @@ let list = require('./home/list');
 app.get('/api/list/:city/:page',function (req,res) {
     res.send(list);
 });
+
+//商户详情
+let info = require('./detail/info');
+// 通过ID来获取商务信息
+app.get('/api/detail/info/:id',(req, res) =>{
+    res.send(info)
+});
+
+// 评价列表  ID 页码  page
+let comment = require('./detail/comment');
+app.get('/api/detail/comment/:id/:page',(req,res)=>{
+    res.send(comment);
+})
 //fetch(url,{
 // Accept:"application/json"
 // }).then(res=>res.json()).then(data=>{

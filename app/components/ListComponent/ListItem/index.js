@@ -6,7 +6,7 @@ export default class ListItem extends Component{
         let {img,title,subTitle,distance,price,number,id} = this.props.data;
 
         return (
-            <Link to={'/detail'+id}>
+            <Link to={'/detail/'+id}>
             <div>
                <div className="list-item">
                    <img src={img}/>
