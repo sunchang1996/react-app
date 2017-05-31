@@ -13,6 +13,7 @@ export default class Info extends Component{
             <div>
                 {
                     this.state.data?<InfoComponent data={this.state.data}/>: <div>正在加载中...</div>
+
                 }
             </div>
         )
