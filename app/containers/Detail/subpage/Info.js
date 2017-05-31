@@ -1,16 +1,25 @@
 import React,{Component} from 'react';
 import {getInfo} from '../../../fetch/detail/detail';
+import InfoComponent from "../../../components/InfoComponent/InfoComponent";
 export default class Info extends Component{
+    constructor(){
+        super();
+        this.state={
+            data:false
+        }
+    }
     render(){
         return (
             <div>
-                Info
+                {
+                    this.state.data?<InfoComponent data={this.state.data}/>: <div>正在加载中...</div>
+                }
             </div>
         )
     }
     componentDidMount(){
         getInfo(this.props.id).then(res=>res.json()).then(data=>{
-            console.log(data);
+            this.setState({data})
         })
     }
 }
