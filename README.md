@@ -54,3 +54,6 @@
     简单来说 就是实现了ajax，promist综合的一个方法 结果会返回一个promise对象 后面可以直接.then()
       Accept:'application/json'  响应头 返回json数据
 ```
+##  extract-text-webpack-plugin  抽取文本的插件
+
+## postcss-loader --save-dev 自动加载css 兼容前缀
