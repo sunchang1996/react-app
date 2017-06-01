@@ -19,7 +19,7 @@ export function post(url,obj) {
         method:'POST',
         // 手动写请求头
         headers:{
-            'Content-Type':'application/x-www/form-urlencoded'
+            'Content-Type':'application/x-www-form-urlencoded'
         },
         body: toUrlencoded(obj)
     })

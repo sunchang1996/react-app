@@ -20,9 +20,8 @@ export default class OrderList  extends Component{
 
     // 提交评价内容到后台
     commitComment(id,comment,callback){ //内容 商户 id callback 更改评价状态
-        console.log(id);
-        console.log(comment);
-        postComment({id,comment});
+
+        postComment({id,comment}).then(res=>res.json()).then(data=>callback())
     }
 
     componentDidMount(){

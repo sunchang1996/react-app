@@ -4,7 +4,7 @@ export default class HeadComponent extends Component{
     render(){
         return (
             <div className="back header-component">
-                    <i className="iconfont icon-fanhui" onClick={()=>this.back()}></i>
+                    <i className="iconfont icon-fanhui" onClick={()=>{this.back()}}></i>
                 <span>
                     {this.props.title}
                 </span>
