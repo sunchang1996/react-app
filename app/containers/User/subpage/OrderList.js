@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {getOrderList} from  '../../../fetch/orderList'
+import {getOrderList,postComment} from  '../../../fetch/orderList'
 import OrderListComponent from "../../../components/OrderListComponent";
 export default class OrderList  extends Component{
     constructor(){
@@ -12,11 +12,19 @@ export default class OrderList  extends Component{
         return (
             <div>
                 {
-                    this.state.data.length? <OrderListComponent data={this.state.data}/>: <div>加载中...</div>
+                    this.state.data.length? <OrderListComponent data={this.state.data} commitComment={this.commitComment.bind(this)}/>: <div>加载中...</div>
                 }
             </div>
         )
     }
+
+    // 提交评价内容到后台
+    commitComment(id,comment,callback){ //内容 商户 id callback 更改评价状态
+        console.log(id);
+        console.log(comment);
+        postComment({id,comment});
+    }
+
     componentDidMount(){
         getOrderList(this.props.username).then(res=>res.json()).then(data=>{
             this.setState({

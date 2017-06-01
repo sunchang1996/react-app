@@ -6,3 +6,21 @@ export function get(url) {
         Accept:'application/json'
     })
 }
+// 将对象转换成formData 格式
+function toUrlencoded(obj) {
+    let arr = [];
+    for (let key in obj) {
+        arr.push(`${key} = ${obj[key]}`);//id =1 ,comment=2
+    }
+    return arr.join("&")
+}
+export function post(url,obj) {
+    return fetch(url,{
+        method:'POST',
+        // 手动写请求头
+        headers:{
+            'Content-Type':'application/x-www/form-urlencoded'
+        },
+        body: toUrlencoded(obj)
+    })
+}
