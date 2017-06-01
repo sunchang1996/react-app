@@ -33,7 +33,7 @@ class Login extends Component {
             // 提交到login的路径 肯定是通过 encode 转化后的跳转 是需要转码的
             this.props.history.push(decodeURIComponent(this.props.match.params.route));
         }else {
-            //如果没有指定跳回那个也  默认回到用户页
+            //如果没有指定跳回那个页  默认回到用户页
             this.props.history.push('/user');
         }
     }

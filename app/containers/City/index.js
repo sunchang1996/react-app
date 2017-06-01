@@ -10,7 +10,7 @@ import ChooserCity from "../../components/ChooserCity/ChooserCity";
         return (
             <div>
                 {/*头*/}
-                <HeadComponent title="选择城市" history={this.props.history}/>
+                <HeadComponent title="选择城市" history ={this.props.history}/>
                 {/*当前城市*/}
                 <CurrentCity cityName={this.props.userInfo.cityName}/>
                 {/*选择城市*/}
