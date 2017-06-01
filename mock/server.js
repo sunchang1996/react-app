@@ -25,7 +25,15 @@ app.get('/api/detail/info/:id',(req, res) =>{
 let comment = require('./detail/comment');
 app.get('/api/detail/comment/:id/:page',(req,res)=>{
     res.send(comment);
-})
+});
+
+// 订单列表  用户名 id /api/orderlist/:username
+let orderList = require('./orderlist/orderList');
+app.get('/api/orderlist/:username',((req,res)=>{
+    res.send(orderList)
+}))
+
+
 //fetch(url,{
 // Accept:"application/json"
 // }).then(res=>res.json()).then(data=>{
